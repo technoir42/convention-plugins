@@ -42,6 +42,7 @@ internal fun Project.configureKotlinMultiplatform(
             freeCompilerArgs.addAll(
                 "-Xconsistent-data-class-copy-visibility",
                 "-Xexpect-actual-classes",
+                "-Xwarning-level=NOTHING_TO_INLINE:disabled",
             )
         }
 
