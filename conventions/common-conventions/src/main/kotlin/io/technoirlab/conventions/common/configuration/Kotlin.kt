@@ -25,6 +25,7 @@ fun Project.configureKotlin(
             jvmDefault.set(JvmDefaultMode.NO_COMPATIBILITY)
             freeCompilerArgs.addAll(
                 "-Xconsistent-data-class-copy-visibility",
+                "-Xwarning-level=NOTHING_TO_INLINE:disabled",
             )
         }
     }
